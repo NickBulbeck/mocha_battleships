@@ -1,0 +1,22 @@
+{
+  "name": "mocha_battleships",
+  "version": "1.0.0",
+  "description": "Practicing mocha",
+  "main": "app.js",
+  "scripts": {
+    "test": "node appTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickBulbeck/mocha_battleships.git"
+  },
+  "keywords": [
+    "mocha"
+  ],
+  "author": "Nick Bulbeck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickBulbeck/mocha_battleships/issues"
+  },
+  "homepage": "https://github.com/NickBulbeck/mocha_battleships#readme"
+}
