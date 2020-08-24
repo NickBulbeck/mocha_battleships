@@ -4,7 +4,7 @@
   "description": "Practicing mocha",
   "main": "app.js",
   "scripts": {
-    "test": "mocha appTest.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
