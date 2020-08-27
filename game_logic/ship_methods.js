@@ -5,14 +5,12 @@ const checkForShip = (player,coordinates) => {
     ship = player.ships[i];
     shipPresent = ship.locations.filter(function (actualCoordinate) {
       return (actualCoordinate[0] === coordinates[0]) && (actualCoordinate[1] === coordinates[1]);
-    });
-    if (!shipPresent.length > 0) {
-      return false;
-    } else {
+    })[0];
+    if (shipPresent) {
       return true;
     }
   }
-
+  return false;
 }
 
 module.exports.checkForShip = checkForShip;
