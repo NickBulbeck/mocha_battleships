@@ -79,6 +79,12 @@ describe('fire', function() {
       ],
     };
   });
+  after(function() {                                      // We don't really need after() in this case.
+    console.log("Complete 'fire' test-suite completed");  // A better use for it is when your functions have
+  });                                                     // significant side-effects, such as overwriting a
+  afterEach(function() {                                  // database or altering the DOM.
+    console.log("That's one 'fire' test...");             
+  });
 
   let fire = require('../game_logic/ship_methods').fire;
   it('should record damage on the given players ship at a given coordinate', function() {
